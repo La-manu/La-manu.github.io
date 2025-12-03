@@ -74,6 +74,119 @@
     <div class="imagem">
         <img src="img/Escrita.png" alt="">
     </div>
+
+
+    <section class="horario-atendimento" aria-labelledby="horario-title">
+        <h2 id="horario-title">Horário de Atendimento</h2>
+
+        <div class="horario-wrapper">
+            <!-- tabela (desktop) -->
+            <table class="horario-table" role="table" aria-label="Horário de atendimento do portal">
+            <thead>
+                <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Redação</th>
+                <th scope="col">Assinaturas</th>
+                <th scope="col">Publicidade</th>
+                <th scope="col">Imprensa / Assessoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Segunda</th>
+                <td>08:00 — 18:00</td>
+                <td>09:00 — 18:00</td>
+                <td>09:00 — 17:00</td>
+                <td>08:30 — 17:30</td>
+                </tr>
+
+                <tr>
+                <th scope="row">Terça</th>
+                <td>08:00 — 18:00</td>
+                <td>09:00 — 18:00</td>
+                <td>09:00 — 17:00</td>
+                <td>08:30 — 17:30</td>
+                </tr>
+
+                <tr>
+                <th scope="row">Quarta</th>
+                <td>08:00 — 18:00</td>
+                <td>09:00 — 18:00</td>
+                <td>09:00 — 17:00</td>
+                <td>08:30 — 17:30</td>
+                </tr>
+
+                <tr>
+                <th scope="row">Quinta</th>
+                <td>08:00 — 18:00</td>
+                <td>09:00 — 18:00</td>
+                <td>09:00 — 17:00</td>
+                <td>08:30 — 17:30</td>
+                </tr>
+
+                <tr>
+                <th scope="row">Sexta</th>
+                <td>08:00 — 18:00</td>
+                <td>09:00 — 18:00</td>
+                <td>09:00 — 17:00</td>
+                <td>08:30 — 17:30</td>
+                </tr>
+
+                <tr>
+                <th scope="row">Sábado</th>
+                <td>09:00 — 13:00</td>
+                <td>—</td>
+                <td>—</td>
+                <td>09:00 — 13:00</td>
+                </tr>
+
+                <tr>
+                <th scope="row">Domingo</th>
+                <td>Plantão reduzido</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <!-- cards (mobile) -->
+            <div class="horario-cards" aria-hidden="true">
+            <article class="card">
+                <h3>Segunda — Sexta</h3>
+                <ul>
+                <li><strong>Redação:</strong> 08:00 — 18:00</li>
+                <li><strong>Assinaturas:</strong> 09:00 — 18:00</li>
+                <li><strong>Publicidade:</strong> 09:00 — 17:00</li>
+                <li><strong>Imprensa:</strong> 08:30 — 17:30</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>Sábado</h3>
+                <ul>
+                <li><strong>Redação:</strong> 09:00 — 13:00</li>
+                <li><strong>Imprensa:</strong> 09:00 — 13:00</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>Domingo</h3>
+                <ul>
+                <li><strong>Plantão:</strong> Redução de equipe — consulta por e-mail</li>
+                </ul>
+            </article>
+            </div>
+        </div>
+
+        <p class="observacao">
+            <small>
+            Horários sujeitos a alterações em feriados e vésperas de eventos especiais. Para atendimento imediato use nossos canais digitais.
+            </small>
+        </p>
+        </section>
+
+
         <!-- Formulário simples de envio -->
     <form id="contactForm" action="/submit" method="post" enctype="multipart/form-data" novalidate>
     <fieldset>
@@ -181,6 +294,33 @@
         <div id="formMessages" role="alert" aria-live="polite" style="margin-top: .5rem;"></div>
     </fieldset>
     </form>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-title">Prisma Notícia</h2>
+                <p class="footer-text">
+                    Seu portal que enxerga tudo de vários ângulos — rápido, direto e sem
+                    enrolação.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-subtitle">Redes sociais</h3>
+                <p class="footer-text">Fica de olho nas novidades:</p>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Prisma Notícia — Todos os direitos reservados.
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="forms.js"></script>

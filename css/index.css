@@ -664,3 +664,8 @@ hr {
   width: 85%;
   margin: auto auto;
 }
+iframe {
+  display: block;
+  margin: 30px auto;
+  margin: auto auto;
+}

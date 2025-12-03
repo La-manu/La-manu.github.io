@@ -1,61 +1,58 @@
 <!-- Documento HTML5 -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <!-- Para o site ser responsivo em celulares -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Prisma Notícia</title>
 
     <!-- Arquivo CSS externo -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-
     <!-- ===================== CABEÇALHO ===================== -->
     <header>
-
         <!-- Parte superior do header (logo + menu + pesquisa) -->
         <div class="cima">
-
             <!-- LOGO + ÍCONE DO MENU LATERAL -->
             <div class="logo">
-                <button id="btnMenu" aria-label="Abrir menu" style="background:none;border:none;padding:0">
+                <button id="btnMenu" aria-label="Abrir menu" style="background: none; border: none; padding: 0">
                     <!-- Use sua imagem em img/menu.png se quiser; aqui tem fallback com texto -->
-                    <img class="menu" src="img/menu.png" alt="menu" onerror="this.style.display='none';this.insertAdjacentText('afterend','☰ Menu')">
+                    <img class="menu" src="img/menu.png" alt="menu"
+                        onerror="this.style.display='none';this.insertAdjacentText('afterend','☰ Menu')" />
                 </button>
 
-                    <!-- NAV: a sidebar (já inserida no local correto) -->
-                    <nav id="sidebar" class="sidebar" aria-hidden="true">
+                <!-- NAV: a sidebar (já inserida no local correto) -->
+                <nav id="sidebar" class="sidebar" aria-hidden="true">
                     <!-- botão fechar com id btnFechar -->
-                    <button id="btnFechar" class="fechar" aria-label="Fechar menu">×</button>
+                    <button id="btnFechar" class="fechar" aria-label="Fechar menu">
+                        ×
+                    </button>
                     <a href="index.html">Início</a>
                     <a href="noticia.html">Notícias</a>
                     <a href="entretenimento.html">Entretenimento</a>
                     <a href="contato.html">Contato</a>
-                    </nav>
+                </nav>
 
-                <img src="/img/logo.png" alt="" class="log">  <!-- Logo do site -->
+                <img src="/img/logo.png" alt="" class="log" />
+                <!-- Logo do site -->
             </div>
 
             <!-- ÁREA DA PESQUISA -->
             <div class="pesquisa">
                 <div class="search-wrapper">
-
                     <!-- Campo de busca completo -->
                     <label class="search" aria-label="Campo de busca">
-
                         <!-- Campo de texto onde o usuário digita -->
                         <input type="search" placeholder="Busque" class="search-input" />
 
                         <!-- Botão com ícone de lupa -->
-                        <button class="search-btn" aria-label="Pesquisar">
-                            🔍︎​
-                        </button>
-
+                        <button class="search-btn" aria-label="Pesquisar">🔍︎​</button>
                     </label>
                 </div>
             </div>
@@ -72,286 +69,2010 @@
 
     <!-- Título com imagem -->
     <div class="box">
-        <img src="/img/Escrita.png" alt="">
+        <img src="/img/Escrita.png" alt="" />
         <h3>Ultímas Notícias</h3>
     </div>
 
-
     <!-- ===================== CARROSSEL DE NOTÍCIAS ===================== -->
     <section class="carousel-container">
-
         <!-- Faixa deslizante do carrossel -->
         <div class="carousel-track">
-
             <!-- Cada card representa uma notícia -->
-            <div class="card" onclick="openModal('modal-harrypotter')">
-                <h3>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia de provas</h3>
+            <div class="card" onclick="openModal('modal-Enem')">
+                <h3>
+                    Enem 2025: Inep divulga gabarito oficial e cadernos de questões do
+                    segundo dia de provas
+                </h3>
                 <h2>Educação</h2>
-                <h4>date: 19 de Novembro de 2025 </h4>
-                <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659"
+                    alt="" />
                 <p></p>
             </div>
-             
-            <div class="card">
-                <h3>Incêndios florestais em unidades de conservação chegam ao menor patamar desde 2018</h3>
+
+            <div class="card" onclick="openModal('modal-incendio')">
+                <h3>
+                    Incêndios florestais em unidades de conservação chegam ao menor
+                    patamar desde 2018
+                </h3>
                 <h2>Planeta</h2>
                 <h4>date: 18 de Novembro de 2025</h4>
-                <img src="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/incendios-florestais-em-unidades-de-conservacao-chegam-ao-menor-patamar-desde-2018/siteoperacao-incendio-10-09-24-foto-vitorsaraiva-1776.png/@@images/50ce804b-e6a7-4587-b7a7-b1b04343d8fd.png" alt="">
+                <img src="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/incendios-florestais-em-unidades-de-conservacao-chegam-ao-menor-patamar-desde-2018/siteoperacao-incendio-10-09-24-foto-vitorsaraiva-1776.png/@@images/50ce804b-e6a7-4587-b7a7-b1b04343d8fd.png"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</h3>
+            <div class="card" onclick="openModal('modal-harrypotter')">
+                <h3>
+                    Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"
+                </h3>
                 <h2>Mundo</h2>
-                <h4> date: 19 de Novembro de 2025 </h4>
-                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
+            <div class="card" onclick="openModal('modal-bolsonaro')">
                 <h3>Batalhão da PM entra no radar para prisão de Bolsonaro</h3>
                 <h2>Política</h2>
-                <h4> date: 19 de Novembro 2025</h4>
-                <img src="/img/EDUTECH.png" alt="EduTech em Alta">
+                <h4>date: 19 de Novembro 2025</h4>
+                <img src="/img/EDUTECH.png" alt="EduTech em Alta" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Stranger Things | Criadores confirmam duração do último episódio</h3>
+            <div class="card" onclick="openModal('modal-strangerthings')">
+                <h3>
+                    Stranger Things | Criadores confirmam duração do último episódio
+                </h3>
                 <h2>Mundo</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Quem é Chico Moedas, ex de Luísa Sonza que pode entrar para a política</h3>
+            <div class="card" onclick="openModal('modal-chicomoedas')">
+                <h3>
+                    Quem é Chico Moedas, ex de Luísa Sonza que pode entrar para a
+                    política
+                </h3>
                 <h2>Famosos</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz NYT</h3>
+            <div class="card" onclick="openModal('modal-maduro')">
+                <h3>
+                    EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação,
+                    diz NYT
+                </h3>
                 <h2>Política</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=900&crop=0" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=900&crop=0"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Lula vota a Belém para pressionar por resultado concreto da COP30</h3>
+            <div class="card" onclick="openModal('modal-lula')">
+                <h3>
+                    Lula vota a Belém para pressionar por resultado concreto da COP30
+                </h3>
                 <h2>Política</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp"
+                    alt="" />
                 <p></p>
             </div>
-
-
 
             <!-- ===================== AQUI OS CARDS TA DUPLICADO PRA O CARROSEL CONSEGUIR SE MOVER NATURALMENTE E LISO ===================== -->
 
-             <div class="card" onclick="openModal('modal-harrypotter')">
-                <h3>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia de provas</h3>
+            <div class="card" onclick="openModal('modal-Enem')">
+                <h3>
+                    Enem 2025: Inep divulga gabarito oficial e cadernos de questões do
+                    segundo dia de provas
+                </h3>
                 <h2>Educação</h2>
-                <h4>date: 19 de Novembro de 2025 </h4>
-                <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659"
+                    alt="" />
                 <p></p>
             </div>
-             
-            <div class="card">
-                <h3>Incêndios florestais em unidades de conservação diminui desde 2018</h3>
+
+            <div class="card" onclick="openModal('modal-incendio')">
+                <h3>
+                    Incêndios florestais em unidades de conservação diminui desde 2018
+                </h3>
                 <h2>Planeta</h2>
                 <h4>date: 18 de Novembro de 2025</h4>
-                <img src="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/incendios-florestais-em-unidades-de-conservacao-chegam-ao-menor-patamar-desde-2018/siteoperacao-incendio-10-09-24-foto-vitorsaraiva-1776.png/@@images/50ce804b-e6a7-4587-b7a7-b1b04343d8fd.png" alt="">
+                <img src="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/incendios-florestais-em-unidades-de-conservacao-chegam-ao-menor-patamar-desde-2018/siteoperacao-incendio-10-09-24-foto-vitorsaraiva-1776.png/@@images/50ce804b-e6a7-4587-b7a7-b1b04343d8fd.png"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</h3>
+            <div class="card" onclick="openModal('modal-harrypotter')">
+                <h3>
+                    Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"
+                </h3>
                 <h2>Mundo</h2>
-                <h4> date: 19 de Novembro de 2025 </h4>
-                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
+            <div class="card" onclick="openModal('modal-bolsonaro')">
                 <h3>Batalhão da PM entra no radar para prisão de Bolsonaro</h3>
                 <h2>Política</h2>
-                <h4> date: 21 de Dezembro 2024</h4>
-                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                <h4>date: 21 de Dezembro 2024</h4>
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0"
+                    alt="EduTech em Alta" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Stranger Things | Criadores confirmam duração do último episódio</h3>
+            <div class="card" onclick="openModal('modal-strangerthings')">
+                <h3>
+                    Stranger Things | Criadores confirmam duração do último episódio
+                </h3>
                 <h2>Mundo</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Quem é o Chico Moedas, ex de Luísa Sonza que pode entrar para a política</h3>
+            <div class="card" onclick="openModal('modal-chicomoedas')">
+                <h3>
+                    Quem é o Chico Moedas, ex de Luísa Sonza que pode entrar para a
+                    política
+                </h3>
                 <h2>Famosos</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz NYT</h3>
+            <div class="card" onclick="openModal('modal-maduro')">
+                <h3>
+                    EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação,
+                    diz NYT
+                </h3>
                 <h2>Política</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=900&crop=0" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=900&crop=0"
+                    alt="" />
                 <p></p>
             </div>
 
-            <div class="card">
-                <h3>Lula vota a Belém para pressionar por resultado concreto da COP30</h3>
+            <div class="card" onclick="openModal('modal-lula')">
+                <h3>
+                    Lula vota a Belém para pressionar por resultado concreto da COP30
+                </h3>
                 <h2>Política</h2>
-                <h4> date: 19 de Novembro de 2025</h4>
-                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                <h4>date: 19 de Novembro de 2025</h4>
+                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp"
+                    alt="" />
                 <p></p>
             </div>
-
         </div>
     </section>
-<!-- ===================== UMA PEQUENA SEÇÃO COM 3 ULTIMAS NOTICIAS ===================== -->
+
+
+
+    <!-- ===================== UMA PEQUENA SEÇÃO COM 3 ULTIMAS NOTICIAS ===================== -->
     <section class="ultimas">
-        
         <div class="quadrado">
-            <div class="box1">
-                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
-                <h1>Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</h1>
-                <h2>Cabeças de chave do próximo Mundial foram definidos de acordo com o ranking da Fifa</h2>
+            <div class="box1" onclick="openModal('modal-copa')">
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0"
+                    alt="" />
+                <h1>
+                    Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo
+                </h1>
+                <h2>
+                    Cabeças de chave do próximo Mundial foram definidos de acordo com o
+                    ranking da Fifa
+                </h2>
             </div>
 
             <div class="quadradinho">
-                <div class="box2">
-                    <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
-                    
+                <div class="box2" onclick="openModal('modal-anulada')">
+                    <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg"
+                        alt="" />
+
                     <div class="text">
                         <h1>Enem 2025 terá 3 questões anuladas; veja quais são</h1>
-                        <h2>questões anuladas após vazamento; veja detalhes e as questões afetadas.</h2>
+                        <h2>
+                            questões anuladas após vazamento; veja detalhes e as questões
+                            afetadas.
+                        </h2>
                     </div>
                 </div>
-                <div class="box2">
-                     <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/0ba7/live/4671e100-c153-11f0-ae46-bd64331f0fd4.jpg.webp" alt="">
+                <div class="box2" onclick="openModal('modal-cometa')">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/0ba7/live/4671e100-c153-11f0-ae46-bd64331f0fd4.jpg.webp"
+                        alt="" />
                     <div class="text">
                         <h1>O que é o cometa 3I/Atlas? naves alienígenas?</h1>
-                        <h2>Cometa com comportamento incomum avistado no sistema solar</h2>
+                        <h2>
+                            Cometa com comportamento incomum avistado no sistema solar
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-   <!-- ===================== CÓDIGO DE TODAS AS MODAL DESSA PAGINA (COLOQUEI AQUI PQ TA MAIS FACIL P ORGANIZAR) ===================== -->
-   <!-- ===================== MODAL 1 (VAI TER MUITAS, SE PREPARA) ===================== -->
-   <div id="modal-harrypotter" class="modal">
-                <div class="modal-content">
-                        <span onclick="closeModal('modal-harrypotter')" class="close">X</span>
-                        <div class="cabecalho">
-                            <h1>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia de provas</h1>
-                            <h2>Respostas das provas de Matemática e Ciências da Natureza serão usadas apenas para fins pedagógicos; resultado final do exame será divulgado em janeiro</h2>
-                            <h3>postado em 19/11/2025 11:42</h3>
+    <!-- ===================== CÓDIGO DE TODAS AS MODAL DESSA PAGINA (COLOQUEI AQUI PQ TA MAIS FACIL P ORGANIZAR) ===================== -->
+    <!-- ===================== MODAL 1 (VAI TER MUITAS, SE PREPARA) ===================== -->
+    <div id="modal-Enem" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-Enem')" class="close">X</span>
+            <div class="cabecalho">
+                <h1>
+                    Enem 2025: Inep divulga gabarito oficial e cadernos de questões do
+                    segundo dia de provas
+                </h1>
+                <h2>
+                    Respostas das provas de Matemática e Ciências da Natureza serão
+                    usadas apenas para fins pedagógicos; resultado final do exame será
+                    divulgado em janeiro
+                </h2>
+                <h3>postado em 19/11/2025 11:42</h3>
+            </div>
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659"
+                alt="" class="img-noticia" />
+            <p class="descricao-foto">
+                Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo
+                Miguel/MEC)
+            </p>
+            <div class="conteudo">
+                <p>
+                    O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio
+                    Teixeira (Inep) divulgou, nesta quarta-feira (19/11), o
+                    <span class="destaque">gabarito oficial e os cadernos de questões do segundo dia de
+                        provas do Exame Nacional do Ensino Médio (Enem 2025)</span>. Nesta etapa, os participantes
+                    responderam às questões de
+                    Matemática e Ciências da Natureza, disciplinas que costumam
+                    apresentar maior nível de dificuldade e exigem interpretação
+                    precisa, domínio de fórmulas e habilidade de resolução rápida.
+                </p>
+                <p>
+                    O documento com as respostas oficiais foi publicado no portal do
+                    Inep e pode ser consultado pela página do candidato. O gabarito
+                    serve para que os estudantes comparem seus desempenhos, mas não
+                    permite o cálculo exato das notas, já que o Enem utiliza a
+                    metodologia da Teoria de Resposta ao Item (TRI), que considera
+                    parâmetros como dificuldade, coerência das respostas e padrão
+                    individual de acertos e erros.
+                </p>
+                <p>
+                    Em 2025, o segundo dia de aplicação ocorreu de forma tranquila, com
+                    poucas ocorrências, conforme o Inep. No país, o exame mobilizou mais
+                    de 4,8 milhões de candidatos. O Ministério da Educação (MEC) estima
+                    uma taxa de participação de cerca de 70% nos dois dias de prova,
+                    índice considerado uma média últimos anos.
+                </p>
+                <p>
+                    O resultado final do Enem 2025 será divulgado em janeiro de 2026, e
+                    poderá ser usado para ingresso em universidades públicas por meio do
+                    Sistema de Seleção Unificada (Sisu), para obtenção de bolsas no
+                    Programa Universidade para Todos (Prouni) e para acesso a
+                    financiamentos estudantis, como o Fies.
+                </p>
+            </div>
+            <hr />
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
                         </div>
-                        <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659" alt="" class="img-noticia">
-                        <p class="descricao-foto">Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo Miguel/MEC)</p>
-                        <div class="conteudo">
-                            <p>O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) divulgou, nesta quarta-feira (19/11), o <span class="destaque">gabarito oficial e os cadernos de questões do segundo dia de provas do Exame Nacional do Ensino Médio (Enem 2025)</span>. Nesta etapa, os participantes responderam às questões de Matemática e Ciências da Natureza, disciplinas que costumam apresentar maior nível de dificuldade e exigem interpretação precisa, domínio de fórmulas e habilidade de resolução rápida.</p>
-                            <p>O documento com as respostas oficiais foi publicado no portal do Inep e pode ser consultado pela página do candidato. O gabarito serve para que os estudantes comparem seus desempenhos, mas não permite o cálculo exato das notas, já que o Enem utiliza a metodologia da Teoria de Resposta ao Item (TRI), que considera parâmetros como dificuldade, coerência das respostas e padrão individual de acertos e erros.</p>
-                            <p>Em 2025, o segundo dia de aplicação ocorreu de forma tranquila, com poucas ocorrências, conforme o Inep. No país, o exame mobilizou mais de 4,8 milhões de candidatos. O Ministério da Educação (MEC) estima uma taxa de participação de cerca de 70% nos dois dias de prova, índice considerado uma média últimos anos.</p>
-                            <p>O resultado final do Enem 2025 será divulgado em janeiro de 2026, e poderá ser usado para ingresso em universidades públicas por meio do Sistema de Seleção Unificada (Sisu), para obtenção de bolsas no Programa Universidade para Todos (Prouni) e para acesso a financiamentos estudantis, como o Fies.</p>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
                         </div>
-                        <hr>
-                       <div class="saiba-mais">
-                            <h2>SAIBA MAIS</h2>
+                    </a>
 
-                            <div class="grid">
-
-                                <a href="index.html?modal=harrypotter" class="card3">
-                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
-                                    <div class="info">
-                                        <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
-                                        <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
-                                    </div>
-                                 </a>
-
-                                <a href="index.html?modal=bolsonaro" class="card3">
-                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
-                                    <div class="info">
-                                        <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
-                                        <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
-                                    </div>
-                                </a>
-
-                                <a href="index.html?modal=strangerthings" class="card3">
-                                    <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
-                                    <div class="info">
-                                        <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
-                                        <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
-                                    </div>
-                                </a>
-
-                                <a href="index.html?modal=lula" class="card3">
-                                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
-                                <div class="info">
-                                    <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
-                                    <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
-                                </div>
-                                </a>
-
-                                <a href="index.html?modal=copa" class="card3">
-                                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
-            
-                                <div class="info">
-                                    <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
-                                    <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
-                                </div>
-                                </a>
-
-                                <a href="index.html?modal=enem" class="card3">
-                                    <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
-                                    <div class="info">
-                                        <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
-                                        <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
-                                    </div>
-                                </a>
-
-                            </div>
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
                         </div>
+                    </a>
 
-                    </div>
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
                 </div>
-    <!-- ===================== MODAL 2 ===================== -->
+            </div>
 
-<!-- ===================== CÓDIGO DO FOOTERRRRR===================== -->
+        </div>
+    </div>
+    </div>
+    <!-- ===================== MODAL 2 ===================== -->
+    <div id="modal-chicomoedas" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-chicomoedas')" class="close">X</span>
+            <div class="cabecalho">
+                <h1>
+                    Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar
+                    para a política
+                </h1>
+                <h2>
+                    Ex-namorado de Sonza recebeu um convite de Washington Quaquá,
+                    vice-presidente do PT, para entrar no mundo da política
+                </h2>
+                <h3>postado em 18/11/2025 11:55</h3>
+            </div>
+            <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png" alt=""
+                class="img-noticia" />
+            <p class="descricao-foto">
+                Chico Moedas namorou Luísa Sonza em 2023 (Fotos: Reprodução, Redes
+                sociais)
+            </p>
+            <div class="conteudo">
+                <p>
+                    O influenciado digital Chico Moedas, que ficou famoso na época em
+                    que namorou a cantora Luísa Sonza, pode entrar na política. O
+                    ex-namorado de Sonza recebeu um convite de Washington Quaquá,
+                    vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                    de Janeiro.
+                </p>
+                <p>
+                    A ideia do dirigente petista surgiu após o amigo de Casimiro Miguel
+                    participar do Três Irmãos Podcasts, do historiador Jones Manoel, em
+                    outubro.No programa, eles conversaram sobre os rumos que a
+                </p>
+                <p>
+                    No programa, eles conversaram sobre os rumos que a esquerda
+                    brasileira está tomando, além de assuntos como futebol e a
+                    megaoperação policial que deixou mais de 100 mortos recentemente.
+                </p>
+                <p>
+                    “Reforço o convite e repito: a política precisa se arejar cada vez
+                    mais, precisa representar as pessoas e ouvir todas as vozes. A
+                    esquerda tem que aprender a fazer isso e a ampliar esse projeto”,
+                    defendeu Washington Quaquá, justificando seu apoio a Chico Moedas.
+                </p>
+            </div>
+            <hr />
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- ===================== MODAL 3 ===================== -->
+    <div id="modal-chicomoedas" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-chicomoedas')" class="close">X</span>
+            <div class="cabecalho">
+                <h1>Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a política</h1>
+                <h2>O Ex-namorado de Sonza recebeu um convite de Washington Quaquá, vice-presidente do PT, para entrar
+                    no mundo da política</h2>
+                <h3>postado em 18/11/2025 11:55</h3>
+            </div>
+            <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png" alt=""
+                class="img-noticia">
+            <p class="descricao-foto">Chico Moedas namorou Luísa Sonza em 2023 (Fotos: Reprodução, Redes sociais)</p>
+            <div class="conteudo">
+                <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora Luísa Sonza,
+                    pode entrar na política. <span class="destaque">O ex-namorado de Sonza recebeu um convite de
+                        Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio de
+                        Janeiro.</span></p>
+                <p>A ideia do dirigente petista surgiu após o amigo de Casimiro Miguel participar do Três Irmãos
+                    Podcasts, do historiador Jones Manoel, em outubro.No programa, eles conversaram sobre os rumos que a
+                </p>
+                <p>No programa, eles conversaram sobre os rumos que a esquerda brasileira está tomando, além de assuntos
+                    como futebol e a megaoperação policial que deixou mais de 100 mortos recentemente.</p>
+                <p>“Reforço o convite e repito: a política precisa se arejar cada vez mais, precisa representar as
+                    pessoas e ouvir todas as vozes. A esquerda tem que aprender a fazer isso e a ampliar esse projeto”,
+                    defendeu Washington Quaquá, justificando seu apoio a Chico Moedas.</p>
+
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgQ2sFiEHck?si=yK0CiTSZSnknm8Zq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            <hr>
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- ===================== MODAL 4 ===================== -->
+    <div id="modal-incendio" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-incendio')" class="close">X</span>
+            <div class="cabecalho">
+                <h1>
+                    Incêndios florestais em unidades de conservação chegam ao menor
+                    patamar desde 2018
+                </h1>
+                <h2>
+                    Em 2025, 434.392 hectares foram atingidos por incêndios florestais
+                    em unidades de conservação, menor número desde 2018
+                </h2>
+                <h3>postado em 18/11/2025 15h12</h3>
+            </div>
+            <img src="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/incendios-florestais-em-unidades-de-conservacao-chegam-ao-menor-patamar-desde-2018/siteoperacao-incendio-10-09-24-foto-vitorsaraiva-1776.png/@@images/50ce804b-e6a7-4587-b7a7-b1b04343d8fd.png"
+                alt="" class="img-noticia" />
+            <p class="descricao-foto">
+                Incêndio florestal no Parque Nacional da Chapada dos Veadeiros em 2024
+                - Foto: Vitor Saraiva
+            </p>
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">O período de seca de 2025, o mais crítico para incêndios
+                        florestais, encerra com a marca de 434.392 hectares atingidos por
+                        incêndios em unidades de conservação.</span>
+                    O número marca o segundo menor da série histórica, perdendo apenas
+                    para 2018, quando 428.320 hectares foram atingidos. No entanto, em
+                    2025, 79 unidades de conservação foram monitoradas, em comparação
+                    com as 39 monitoradas em 2018.
+                </p>
+
+                <p>
+                    De acordo com o coordenador do Centro Especializado em Manejo
+                    Integrado do Fogo (CEMIF), João Morita, o número consolida avanços
+                    na gestão de fogo nas unidades de conservação.
+                    <span class="destaque">“Em relação a 2018, quase dobramos a quantidade de unidades
+                        monitoradas, o que reflete a melhoria do nosso poder de análise e
+                        consequentemente estamos gerando dados mais realistas”, comenta
+                        Morita.</span>
+                </p>
+
+                <p>
+                    Além disso, o número marca a consolidação de medidas que mudam o
+                    paradigma na gestão do fogo nas unidades de conservação, com foco no
+                    manejo e ordenamento do uso do fogo.
+                    <span class="destaque">“Neste sentido, evoluímos tanto nos instrumentos jurídicos que
+                        dão segurança aos gestores, como os Planos de Manejo Integrado do
+                        Fogo (PMIFs), bem como nas capacitações, treinamentos em serviço e
+                        intercâmbios realizados entre os servidores”, informa o
+                        coordenador.</span>
+                </p>
+
+                <p>
+                    Dos 434.392 hectares atingidos por incêndios, 414.260
+                    (aproximadamente 95%) foram no bioma Cerrado.
+                    <span class="destaque">A Amazônia vem em segundo lugar, com 9.749 hectares
+                        (aproximadamente 2,2%), e a Mata Atlântica, com 9.358
+                        hectares.</span>
+                    Unidades de conservação Caatinga e Pampa somam, juntas, pouco mais
+                    de mil hectares...
+                </p>
+
+                <p>
+                    <span class="destaque">“As chuvas demoraram um pouco mais.</span> As
+                    precipitações que deveriam cair em outubro tardaram para novembro, o
+                    que exigiu que segurássemos um pouco mais que o esperado”, avalia
+                    Morita.
+                </p>
+
+                <h3>Ações de manejo</h3>
+                <p>
+                    Neste ano, as ações de manejo somaram 265.980 hectares, distribuídas
+                    em 32 unidades de conservação.
+                    <span class="destaque">O Cerrado lidera como maior bioma de área manejada, com mais de
+                        86%, a Amazônia vem em segundo lugar com 33.182 hectares.</span>
+                    Mata Atlântica, Caatinga e Pampa somam juntas um pouco mais de 2 mil
+                    hectares.
+                </p>
+
+                <h3>Integração e rápida resposta</h3>
+                <p>
+                    O ano de 2025 também foi marcado pela maior integração entre as
+                    agências de resposta e rápido acionamento.
+                    <span class="destaque">Neste ano, as maiores operações se concentraram na região da
+                        Chapada dos Veadeiros e no Araguaia.</span>
+                    Um dos destaques foram as operações ocorridas no Distrito Federal...
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CzlvpG3mSGE?si=HQ5ifVftS1v0NeAq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <hr />
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- ===================== MODAL 5 ===================== -->
+    <div id="modal-harrypotter" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-harrypotter')" class="close">X</span>
+
+            <div class="cabecalho">
+                <h1>Daniel Radcliffe envia carta ao novo intérprete de Harry Potter</h1>
+                <h2>
+                    Ator deseja boa sorte ao jovem Dominic McLaughlin, novo protagonista da série baseada na saga de
+                    J.K. Rowling
+                </h2>
+                <h3>postado em 18/11/2025 16h40</h3>
+            </div>
+
+            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0"
+                alt="Daniel Radcliffe envia carta ao novo ator de Harry Potter" class="img-noticia" />
+
+            <p class="descricao-foto">
+                Daniel Radcliffe comentou sobre a nova série de Harry Potter — Imagem: CNN Brasil
+            </p>
+
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        Daniel Radcliffe revelou ter escrito uma carta ao jovem Dominic McLaughlin, de 11 anos,
+                        desejando uma excelente jornada como o novo Harry Potter.
+                    </span>
+                    O ator afirmou estar animado com a nova adaptação e disse que entende bem a pressão que o garoto
+                    pode sentir.
+                </p>
+
+                <p>
+                    Durante a entrevista, Radcliffe comentou que sempre terá carinho pela franquia, mas apoia totalmente
+                    a nova geração.
+                    <span class="destaque">
+                        Ele explicou que enviou a carta para dar confiança ao jovem ator e desejar que ele aproveite a
+                        experiência.
+                    </span>
+                </p>
+
+                <p>
+                    A série da HBO promete uma adaptação mais fiel aos livros.
+                    <span class="destaque">
+                        Cada temporada será centrada em um livro da saga, oferecendo mais detalhes do universo bruxo.
+                    </span>
+                </p>
+
+                <p>
+                    O elenco infantil foi revelado recentemente e já está em preparação para as gravações.
+                    <span class="destaque">
+                        A estreia está prevista para 2026, marcando uma nova fase para os fãs de Harry Potter.
+                    </span>
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zEpl0wV1fQM?si=Z14m1PgIa85cKguF"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr />
+
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ===================== MODAL 6 ===================== -->
+    <div id="modal-bolsonaro" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-bolsonaro')" class="close">X</span>
+
+            <div class="cabecalho">
+                <h1>Batalhão da PM entra no radar para prisão de Bolsonaro</h1>
+                <h2>
+                    4º Batalhão da PMDF, no Guará, pode ser destino da custódia caso pena seja executada em regime
+                    fechado
+                </h2>
+                <h3>postado em 19/11/2025 13h43</h3>
+            </div>
+
+            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0"
+                alt="Fachada do 4º Batalhão da PMDF" class="img-noticia" />
+
+            <p class="descricao-foto">
+                4º Batalhão da PMDF localizado no Guará, região administrativa do Distrito Federal — Foto: CNN Brasil
+            </p>
+
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        O 4º Batalhão da PMDF (Polícia Militar do Distrito Federal) passou a ser considerado como opção
+                        para a prisão do ex-presidente Jair Bolsonaro, caso a condenação seja executada em regime
+                        fechado.
+                    </span>
+                    A unidade fica na região administrativa do Guará, cerca de 15 km do centro de Brasília. A informação
+                    foi confirmada por integrantes do governo do Distrito Federal. :contentReference[oaicite:3]{index=3}
+                </p>
+
+                <p>
+                    A possível escolha da PMDF como destino da custódia para Bolsonaro se dá por sua estrutura
+                    administrativa, já usada anteriormente para abrigar presos de alta relevância.
+                    <span class="destaque">
+                        A cela do batalhão — que já abrigou ex-ministro condenado — possui cerca de 20 m², com banheiro,
+                        frigobar e monitoramento 24 horas.
+                    </span> :contentReference[oaicite:4]{index=4}
+                </p>
+
+                <p>
+                    Integrantes da corporação ouvidos dizem haver preocupação de que a dependência precise de reforço no
+                    efetivo e estrutura para garantir segurança e atendimento médico contínuo, especialmente se houver
+                    riscos de protestos.
+                    <span class="destaque">
+                        Há receio quanto a manifestações de apoiadores e a necessidade de vigilância intensiva em razão
+                        da popularidade do ex-presidente.
+                    </span> :contentReference[oaicite:5]{index=5}
+                </p>
+
+                <p>
+                    O caso está sendo avaliado e a decisão final depende de determinação do Supremo Tribunal Federal
+                    (STF).
+                    <span class="destaque">
+                        Até o momento, não há confirmação oficial de que Bolsonaro será encaminhado àquela unidade — a
+                        alternativa está entre outras possibilidades de custódia.
+                    </span> :contentReference[oaicite:7]{index=7}
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1DWuMe_OJEg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr />
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ===================== MODAL 7 ===================== -->
+    <div id="modal-strangerthings" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-strangerthings')" class="close">X</span>
+            <div class="cabecalho">
+                <h1>
+                    Criadores de Stranger Things confirmam duração do último episódio
+                </h1>
+                <h2>
+                    O adeus a Hawkins terá escala de cinema
+                </h2>
+                <h3>postado em 19/11/2025 11:42</h3>
+            </div>
+            <img src="https://static.wixstatic.com/media/fe6907_f24b3c7cb25c490da4aad49c181c60c0~mv2.jpg/v1/fill/w_925,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fe6907_f24b3c7cb25c490da4aad49c181c60c0~mv2.jpg"
+                alt="" class="img-noticia" />
+            <p class="descricao-foto">
+                Crédito: Netflix
+            </p>
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        Ross e Matt Duffer confirmaram que o último episódio de Stranger Things terá mais de duas horas
+                        de duração.
+                    </span>
+                    Em entrevista ao Collider, Ross afirmou que o capítulo final é o único da temporada que supera 90
+                    minutos. “É como um filme”, explicou ao comentar o encerramento da série.
+                </p>
+
+                <p>
+                    A produção acompanha um grupo de adolescentes envolvidos em conspirações governamentais na fictícia
+                    Hawkins, nos anos 1980,
+                    <span class="destaque">
+                        e reúne no elenco Millie Bobby Brown, Finn Wolfhard, Noah Schnapp, Gaten Matarazzo, Caleb
+                        McLaughlin e Sadie Sink.
+                    </span>
+                    A história se estende por quatro temporadas lançadas desde 2016 e chega agora ao desfecho após um
+                    intervalo de quatro anos desde o último volume exibido em 2022.
+                </p>
+
+                <p>
+                    <span class="destaque">
+                        A quinta e última temporada terá lançamento dividido em três partes.
+                    </span>
+                    O Volume 1 estreia em 26 de novembro com quatro episódios; o Volume 2 chega no dia 25 de dezembro
+                    com três capítulos; e o Volume 3, composto apenas pelo episódio final, será lançado em 31 de
+                    dezembro, sempre às 22h no horário de Brasília. A estratégia de dividir a temporada busca dar fôlego
+                    ao encerramento e ampliar a expectativa para a conclusão.
+                </p>
+
+                <p>
+                    <span class="destaque">
+                        Com a confirmação da duração estendida, o capítulo final de Stranger Things se prepara para
+                        encerrar a saga de Hawkins com grande impacto.
+                    </span>
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h1mMnOTBMXg?si=XblXGBjuYVUfHdQ4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <hr />
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- ===================== MODAL 8 ===================== -->
+    <div id="modal-lula" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-lula')" class="close">X</span>
+
+            <div class="cabecalho">
+                <h1>Lula volta à Belém para destravar negociações da COP30</h1>
+                <h2>
+                    Presidente retorna à cúpula climática em fase decisiva para tentar viabilizar acordos entre os
+                    países
+                </h2>
+                <h3>postado em 19/11/2025 11h04</h3>
+            </div>
+
+            <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp"
+                alt="Presidente Lula na COP30 em Belém" class="img-noticia" />
+
+            <p class="descricao-foto">
+                Presidente participa de nova rodada de negociações para avançar acordos climáticos — Foto: Ricardo
+                Stuckert / PR
+            </p>
+
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        O presidente Lula retorna a Belém nesta quarta-feira (19) com o objetivo de destravar as
+                        negociações na reta final da COP30.
+                    </span>
+                    A expectativa é que ele se reúna com representantes de blocos de países, sociedade civil, povos
+                    indígenas e governos subnacionais.
+                </p>
+
+                <p>
+                    Segundo a agenda oficial, Lula deve participar de encontros com países do Grupo Africano, União
+                    Europeia, Grupo Árabe e outras delegações importantes.
+                    <span class="destaque">
+                        A presença do presidente é considerada crucial para viabilizar consenso em temas chave como
+                        financiamento climático, metas de emissão e plano de transição energética.
+                    </span>
+                </p>
+
+                <p>
+                    A volta de Lula ocorre justamente quando o texto final da conferência — conhecido como “Pacote de
+                    Belém” — começa a ser debatido entre as delegações, em uma sessão plenária marcada para esta quarta.
+                    <span class="destaque">
+                        A esperança é que sua interlocução com chefes de Estado e ministros facilite avanços nos
+                        impasses que vinham atrasando o consenso.
+                    </span>
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/teuLcDghgPY?si=zEpN2dUOQgOaZUlK"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr />
+
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- ===================== MODAL 9 ===================== -->
+    <div id="modal-maduro" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-maduro')" class="close">X</span>
+            <div class="cabecalho">
+                <h1>EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz NYT</h1>
+                <h2>Autoridades da Venezuela afirmaram que ditador estaria disposto a deixar o poder após um período de
+                    transição de dois a três anos, segundo reportagem</h2>
+                <h3>postado em 19/11/2025 23:12</h3>
+            </div>
+            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                alt="" class="img-noticia">
+            <p class="descricao-foto">Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo Miguel/MEC)</p>
+            <div class="conteudo">
+                <p>Segundo fontes do jornal, o presidente <span class="destaque">Donald Trump havia autorizado
+                        negociações "paralelas" com o regime venezuelano. </span>Em certo ponto, Maduro ofereceu
+                    renunciar após alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                <p>Autoridades venezuelanas disseram aos americanos que Maduro estaria disposto a renunciar após um
+                    período de transição de dois a três anos. Porém, qualquer "prazo" para o ditador deixar o poder é
+                    inaceitável para os EUA, destacou a reportagem.</p>
+                <p>Isso acontece em meio a um impasse cada vez maior entre os dois países e enquanto os Estados Unidos
+                    aumentam a pressão contra o regime venezuelano e realiza <span class="destaque">ataques no Caribe e
+                        no Pacífico contra barcos que dizem transportar drogas. Nicolás Maduro tem pedido publicamente
+                        que não haja uma guerra, apelando por diálogo com a Casa Branca.</span></p>
+                <h3>Trump aprova planos da CIA para Venezuela</h3>
+                <p>O New York Times também afirmou que <span class="destaque">Trump aprovou planos da CIA, a agência de
+                        inteligência dos EUA, para ações secretas dentro da Venezuela.</span>"Trump realizou duas
+                    reuniões na Sala de Situação da Casa Branca na semana passada para discutir a Venezuela e revisar
+                    opções com seus principais assessores", pontua a reportagem.</p>
+                <p>Entretanto, não está claro quais seriam essas operações ou quando podem ser realizadas. Outro ponto
+                    reforçado pelo jornal é que o presidente americano ainda não autorizou o envio de soldados para o
+                    país sul-americano. De toda forma, Trump disse na segunda-feira (17) que não descarta enviar tropas
+                    para a Venezuela, mantendo a pressão contra o regime de Maduro.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ypRLMbxgoVY?si=lZG39QS0QcXjyv7H"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr>
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- ===================== MODAL 10 ===================== -->
+
+
+
+
+    <div id="modal-copa" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-copa')" class="close">X</span>
+
+            <div class="cabecalho">
+                <h1>Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo de 2026</h1>
+                <h2>
+                    Seleções mais bem ranqueadas e os países-sede serão cabeças de chave no sorteio do Mundial
+                </h2>
+                <h3>postado em 19/11/2025</h3>
+            </div>
+
+            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0"
+                alt="Bola da Copa do Mundo e bandeiras de seleções" class="img-noticia" />
+
+            <p class="descricao-foto">
+                A seleção brasileira aparece entre as cabeças de chave definidas para a Copa do Mundo de 2026 — Foto:
+                CNN Brasil
+            </p>
+
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        A seleção do Brasil será uma das cabeças de chave da Copa do Mundo de 2026, de acordo com o
+                        ranking divulgado pela Fifa.
+                    </span>
+                    A confirmação coloca o país entre as principais seleções do mundo no sorteio dos grupos.
+                </p>
+
+                <p>
+                    No total, integram o pote 1 do sorteio os nove países melhor ranqueados — incluindo Brasil, Espanha,
+                    Argentina, França, Inglaterra, Portugal, Holanda, Bélgica e Alemanha — além dos três países-sede:
+                    Estados Unidos, Canadá e México.
+                    <span class="destaque">
+                        Isso significa que esses países “abrem” os grupos da fase inicial do Mundial, com vantagem
+                        logística e de prestígio.
+                    </span>
+                </p>
+
+                <p>
+                    O sorteio dos 12 grupos da fase de grupos está marcado para 5 de dezembro de 2025, em Washington,
+                    nos Estados Unidos.
+                    <span class="destaque">
+                        A definição do pote 1 mostra a força do Brasil no futebol mundial, mesmo com os desafios das
+                        Eliminatórias recentes.
+                    </span>
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0oHSZAp2sPM?si=vLrEldh4rb8r5Agb"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr />
+
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- ===================== MODAL 11 ===================== -->
+    <div id="modal-cometa" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-cometa')" class="close">X</span>
+
+            <div class="cabecalho">
+                <h1>O que é o cometa 3I/ATLAS e por que ele gerou teorias sobre naves alienígenas</h1>
+                <h2>
+                    Objeto interestelar despertou debate após exibir atividade incomum ao se aproximar do Sol
+                </h2>
+                <h3>postado em 19/11/2025</h3>
+            </div>
+
+            <img src="https://s2-g1.glbimg.com/Si4kcXXKw2sn7E6YH39kD-QMSVI=/0x0:800x450/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/K/z/oGnADuQeiEeBp5VkM1vA/4671e100-c153-11f0-ae46-bd64331f0fd4.jpg.webp"
+                alt="Trajetória do cometa 3I/ATLAS pelo Sistema Solar" class="img-noticia" />
+
+            <p class="descricao-foto">
+                Diagrama da órbita do 3I/ATLAS — ele é um visitante interestelar que atravessa o Sistema Solar. —
+                Imagem: NASA / JPL
+            </p>
+
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        O 3I/ATLAS é apenas o terceiro objeto confirmado vindo de fora do Sistema Solar a ser observado
+                        em trânsito pelo nosso sistema planetário.
+                    </span>
+                    Sua órbita é hiperbólica — isto é, ele não ficará preso ao Sol, mas seguirá viagem de volta ao
+                    espaço interestelar.
+                </p>
+
+                <p>
+                    Astrônomos acreditam que o cometa tenha se formado em um sistema estelar distante e vagado pela
+                    galáxia por bilhões de anos — possivelmente mais antigo do que o próprio Sistema Solar.
+                    <span class="destaque">
+                        Essa antiguidade e origem exterior explicam por que ele é visto como uma oportunidade rara de
+                        estudar materiais e condições de outros sistemas estelares.
+                    </span>
+                </p>
+
+                <p>
+                    À medida que se aproximou do Sol, 3I/ATLAS exibiu atividade intensa: gelo e gases sublimaram,
+                    formando uma coma (nuvem de poeira e gás) e jatos de matéria — comportamento típico de cometas.
+                    <span class="destaque">
+                        Esse outgassing causou aceleração não-gravitacional e aumento de brilho, o que fez o objeto se
+                        destacar e chamar atenção de astrônomos e público em geral.
+                    </span>
+                </p>
+
+                <p>
+                    Apesar de toda especulação, a comunidade científica enfatiza que não há evidência de que 3I/ATLAS
+                    seja uma nave espacial alienígena.
+                    <span class="destaque">
+                        Sua aparência — coma, cauda, composição química rica em gelo e poeira — corresponde ao de um
+                        cometa, ainda que incomum e valioso para estudos.
+                    </span>
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/afppJU82ofU?si=4NbVWmp4nCnfSZJT"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr />
+
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ===================== MODAL 12 ===================== -->
+    <div id="modal-anulada" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('modal-anulada')" class="close">X</span>
+
+            <div class="cabecalho">
+                <h1>Enem 2025 terá 3 questões anuladas após suspeita de vazamento</h1>
+                <h2>
+                    Prova sofreu intervenção após divulgação antecipada de conteúdos por estudante
+                </h2>
+                <h3>postado em 18/11/2025</h3>
+            </div>
+
+            <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg"
+                alt="Logo do INEP — órgão do Enem" class="img-noticia" />
+
+            <p class="descricao-foto">
+                INEP tomou a decisão para garantir a lisura do exame — Imagem: INEP / Governo Federal
+            </p>
+
+            <div class="conteudo">
+                <p>
+                    <span class="destaque">
+                        Três questões do Enem 2025 foram anuladas após relatos de vazamento antes da aplicação da prova.
+                    </span>
+                    A decisão foi tomada pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira
+                    (Inep), após identificar que itens parecidos haviam sido divulgados nas redes sociais.
+                </p>
+
+                <p>
+                    A anulação vale para os itens aplicados no segundo dia da prova, em 16 de novembro.
+                    <span class="destaque">
+                        A medida não prejudica os cidadãos — todas as outras questões e a redação permanecem válidas.
+                    </span>
+                </p>
+
+                <p>
+                    O Inep informou que acionou a Polícia Federal (PF) para investigar a divulgação antecipada das
+                    questões e responsabilizar quem quebrou o sigilo.
+                    <span class="destaque">
+                        A anulação e a investigação visam garantir a isonomia e a lisura do exame.
+                    </span>
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QmKUlgouX_Q?si=1oLMKW8rLuEDVfPU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <hr />
+
+            <div class="saiba-mais">
+                <h2>SAIBA MAIS</h2>
+
+                <div class="grid">
+
+                    <a href="noticia.html?modal=modal-bicheiro" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Bicheiro que inspirou personagem da Netflix irá a júri popular por
+                                homicídio; veja o caso</span>
+                            <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio
+                                de Janeiro, foi encaminhado a júri popular pela morte do contraventor Alcebíades Paes
+                                Garcia, conhecido como Bid.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe1" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg"
+                            alt="EduTech em Alta">
+                        <div class="info">
+                            <span class="tag">A atitude inusitada de Suzane na faculdade que ficou de fora de
+                                “Tremembé”</span>
+                            <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de
+                                interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias
+                                presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos
+                                pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-evento" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="">
+                        <div class="info">
+                            <span class="tag">Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba
+                                como conseguir</span>
+                            <p>O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock
+                                in Rio Card, modalidade que tradicionalmente esgota em poucas horas e garante acesso a
+                                um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-tremembe2" class="card3">
+                        <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">Sandrão processa Prime Video após repercussão da série Tremembé; veja
+                                quanto ela pediu</span>
+                            <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para
+                                a COP30, cúpula internacional do clima. O presidente vai se reunir com o
+                                secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a
+                                governança climática e o multilateralismo"</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-chicomoedas" class="card3">
+                        <img src="https://s2-gshow.glbimg.com/-vduQ5scrPVYgJJyjZTA1WgHFc8=/0x0:1500x1071/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/p/o/LOt4EpRMeD56yD5H8AiA/chico-moedas-e-luisa-sonza-2-.jpg"
+                            alt="">
+
+                        <div class="info">
+                            <span class="tag">Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a
+                                política</span>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora
+                                Luísa Sonza, pode entrar na política. O ex-namorado de Sonza recebeu um convite de
+                                Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio
+                                de Janeiro.</p>
+                        </div>
+                    </a>
+
+                    <a href="noticia.html?modal=modal-maduro" class="card3">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1"
+                            alt="">
+                        <div class="info">
+                            <span class="tag">EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz
+                                NYT</span>
+                            <p>Segundo fontes do jornal, o presidente Donald Trump havia autorizado negociações
+                                "paralelas" com o regime venezuelano. Em certo ponto, Maduro ofereceu renunciar após
+                                alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ===================== CÓDIGO DO FOOTERRRRR===================== -->
+    <!-- ===================== CÓDIGO DO FOOTERRRRR===================== -->
     <footer class="footer">
         <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-title">Prisma Notícia</h2>
+                <p class="footer-text">
+                    Seu portal que enxerga tudo de vários ângulos — rápido, direto e sem
+                    enrolação.
+                </p>
+            </div>
 
             <div class="footer-section">
-            <h2 class="footer-title">Prisma Notícia</h2>
-            <p class="footer-text">
-                Seu portal que enxerga tudo de vários ângulos — rápido, direto e sem enrolação.
-            </p>
+                <h3 class="footer-subtitle">Redes sociais</h3>
+                <p class="footer-text">Fica de olho nas novidades:</p>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
             </div>
-
-
-
-            <div class="footer-section">
-            <h3 class="footer-subtitle">Redes sociais</h3>
-            <p class="footer-text">Fica de olho nas novidades:</p>
-            <div class="footer-social">
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">YouTube</a>
-            </div>
-            </div>
-
         </div>
 
         <div class="footer-bottom">
@@ -359,10 +2080,8 @@
         </div>
     </footer>
 
-
- <!-- ===================== LINKAR JS===================== -->
+    <!-- ===================== LINKAR JS===================== -->
     <script src="script.js"></script>
-
 </body>
-</html>
 
+</html>

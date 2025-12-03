@@ -80,7 +80,7 @@
             <div class="grade">
 
     <!-- ===================== CADA CARD2 É UMA NOTICIA *JA ESTÃO JUNTAS COM O CÓDIGO DA MODAL DELAS, POISNESSA PAGINA ACHEI MAIS ORGANIZADO ASSIM ===================== -->
-                <div class="card2">
+                <div class="card2" onclick="openModal('modal-tremembe1')">
                     <h3>A atitude inusitada de Suzane na faculdade que ficou de fora de “Tremembé”</h3>
                     <h2>Entretenimento</h2>
                     <h4>date: 19 de Novembro de 2025</h4>
@@ -88,7 +88,7 @@
                     <p></p>
                 </div>
 
-                <div class="card2">
+                <div class="card2" onclick="openModal('modal-tremembe2')">
                     <h3>Sandrão processa Prime Video após repercussão da série Tremembé; veja quanto ela pediu</h3>
                     <h2>Entretenimento</h2>
                     <h4>date: 19 de Novembro de 2025</h4>
@@ -96,15 +96,16 @@
                     <p></p>
                 </div>
 
-                <div class="card2">
+                <div class="card2" onclick="openModal('modal-evento')">
                     <h3>Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba como conseguir</h3>
                     <h2>pop</h2>
                     <h4>date: 19 de Novembro de 2025</h4>
                     <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/05/rock-in-rio_widelg.jpg" alt="">
                     <p></p>
                 </div>
+                
 
-                <div class="card2">
+                <div class="card2" onclick="openModal('modal-andressa')">
                     <h3>Andressa Urach vira piada nas redes após “samba culposo” em escola de samba; veja vídeo</h3>
                     <h2>Famosos</h2>
                     <h4>date: 17 de Novembro de 2025</h4>
@@ -112,7 +113,7 @@
                     <p></p>
                 </div>
 
-                <div class="card2">
+                <div class="card2" onclick="openModal('modal-bicheiro')">
                     <h3>Bicheiro que inspirou personagem da Netflix irá a júri popular por homicídio; veja o caso</h3>
                     <h2>Artigos</h2>
                     <h4>date: 18 de Novembro de 2025</h4>
@@ -122,92 +123,15 @@
 
 
                 <div class="card2" onclick="openModal('modal-enem')">
-                     <h3>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia</h3>
+                    <h3>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia</h3>
                     <h2>Educação</h2>
                     <h4>date: 19 de Novembro de 2025 </h4>
                     <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659" alt="">
                     <p></p>
                 </div>
-                <div id="modal-enem" class="modal">
-                <!-- ===================== MODAL DA NOTICIA===================== -->
-                <div class="modal-content">
-                        <span onclick="closeModal('modal-enem')" class="close">X</span>
-                        <div class="cabecalho">
-                            <h1>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia de provas</h1>
-                            <h2>Respostas das provas de Matemática e Ciências da Natureza serão usadas apenas para fins pedagógicos; resultado final do exame será divulgado em janeiro</h2>
-                            <h3>postado em 19/11/2025 11:42</h3>
-                        </div>
-                        <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659" alt="" class="img-noticia">
-                        <p class="descricao-foto">Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo Miguel/MEC)</p>
-                        <div class="conteudo">
-                            <p>O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) divulgou, nesta quarta-feira (19/11), o <span class="destaque">gabarito oficial e os cadernos de questões do segundo dia de provas do Exame Nacional do Ensino Médio (Enem 2025)</span>. Nesta etapa, os participantes responderam às questões de Matemática e Ciências da Natureza, disciplinas que costumam apresentar maior nível de dificuldade e exigem interpretação precisa, domínio de fórmulas e habilidade de resolução rápida.</p>
-                            <p>O documento com as respostas oficiais foi publicado no portal do Inep e pode ser consultado pela página do candidato. O gabarito serve para que os estudantes comparem seus desempenhos, mas não permite o cálculo exato das notas, já que o Enem utiliza a metodologia da Teoria de Resposta ao Item (TRI), que considera parâmetros como dificuldade, coerência das respostas e padrão individual de acertos e erros.</p>
-                            <p>Em 2025, o segundo dia de aplicação ocorreu de forma tranquila, com poucas ocorrências, conforme o Inep. No país, o exame mobilizou mais de 4,8 milhões de candidatos. O Ministério da Educação (MEC) estima uma taxa de participação de cerca de 70% nos dois dias de prova, índice considerado uma média últimos anos.</p>
-                            <p>O resultado final do Enem 2025 será divulgado em janeiro de 2026, e poderá ser usado para ingresso em universidades públicas por meio do Sistema de Seleção Unificada (Sisu), para obtenção de bolsas no Programa Universidade para Todos (Prouni) e para acesso a financiamentos estudantis, como o Fies.</p>
-                        </div>
-                        <hr>
-                       <div class="saiba-mais">
-                            <h2>SAIBA MAIS</h2>
+                
 
-                            <div class="grid">
-
-                                <a href="index.html?modal=modal-harrypotter" class="card">
-                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
-                                    <div class="info">
-                                        <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
-                                        <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
-                                    </div>
-                                 </a>
-
-                                <a href="index.html?modal=bolsonaro" class="card">
-                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
-                                    <div class="info">
-                                        <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
-                                        <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
-                                    </div>
-                                </a>
-
-                                <a href="index.html?modal=strangerthings" class="card">
-                                    <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
-                                    <div class="info">
-                                        <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
-                                        <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
-                                    </div>
-                                </a>
-
-                                <a href="index.html?modal=lula" class="card">
-                                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
-                                <div class="info">
-                                    <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
-                                    <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
-                                </div>
-                                </a>
-
-                                <a href="index.html?modal=copa" class="card">
-                                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
-            
-                                <div class="info">
-                                    <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
-                                    <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
-                                </div>
-                                </a>
-
-                                <a href="index.html?modal=enem" class="card">
-                                    <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
-                                    <div class="info">
-                                        <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
-                                        <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="card2">
+                <div class="card2" onclick="openModal('modal-maduro')">
                     <h3>EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz NYT</h3>
                     <h2>Política</h2>
                     <h4> date: 19 de Novembro de 2025</h4>
@@ -225,21 +149,201 @@
                     <p></p>
                 </div>
                 <!-- ===================== MODAL DA NOTICIA ===================== -->
+              
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======================= MODAL1======================= -->
+                <div id="modal-enem" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-enem')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>Enem 2025: Inep divulga gabarito oficial e cadernos de questões do segundo dia de provas</h1>
+                                <h2>Respostas das provas de Matemática e Ciências da Natureza serão usadas apenas para fins pedagógicos; resultado final do exame será divulgado em janeiro</h2>
+                                <h3>postado em 19/11/2025 11:42</h3>
+                            </div>
+                            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/11/16/675x450/1_enem-4-60987145.jpg?20251116200659?20251116200659" alt="" class="img-noticia">
+                            <p class="descricao-foto">Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo Miguel/MEC)</p>
+                            <div class="conteudo">
+                                <p>O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) divulgou, nesta quarta-feira (19/11), o <span class="destaque">gabarito oficial e os cadernos de questões do segundo dia de provas do Exame Nacional do Ensino Médio (Enem 2025)</span>. Nesta etapa, os participantes responderam às questões de Matemática e Ciências da Natureza, disciplinas que costumam apresentar maior nível de dificuldade e exigem interpretação precisa, domínio de fórmulas e habilidade de resolução rápida.</p>
+                                <p>O documento com as respostas oficiais <span class="destaque">foi publicado no portal do Inep e pode ser consultado pela página do candidato. O gabarito serve para que os estudantes comparem seus desempenhos, mas não permite o cálculo exato das notas, já que o Enem utiliza a metodologia da Teoria de Resposta ao Item (TRI)</span>, que considera parâmetros como dificuldade, coerência das respostas e padrão individual de acertos e erros.</p>
+                                <p>Em 2025, o segundo dia de aplicação ocorreu de forma tranquila, com poucas ocorrências, conforme o Inep. No país, o exame mobilizou mais de 4,8 milhões de candidatos. O Ministério da Educação (MEC) estima uma taxa de participação de cerca de 70% nos dois dias de prova, índice considerado uma média últimos anos.</p>
+                                <p>O resultado final do Enem 2025 será divulgado em janeiro de 2026, e poderá ser usado para ingresso em universidades públicas por meio do Sistema de Seleção Unificada (Sisu), para obtenção de bolsas no Programa Universidade para Todos (Prouni) e para acesso a financiamentos estudantis, como o Fies.</p>
+                            
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VGgCaqyWkPo?si=zS7xC4yZYWwdb0k5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    <!-- ======================= MODAL2 ======================= -->
+
+                <div id="modal-evento" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-evento')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>Rock in Rio 2026 anuncia venda do RIR Card com ingressos limitados; saiba como conseguir</h1>
+                                <h2>Bilhetes especiais garantem entrada em um dos dias do festival e costumam esgotar rapidamente</h2>
+                                <h3>postado em 19/11/2025 11h28</h3>
+                            </div>
+                            <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/07/show.png" alt="" class="img-noticia">
+                            <p class="descricao-foto">Foto: Divulgação</p>
+                            <div class="conteudo">
+                                <p> <span class="destaque">O Rock in Rio 2026 inicia uma nova corrida por ingressos ao anunciar a liberação do Rock in Rio Card</span>, modalidade que tradicionalmente esgota em poucas horas e garante acesso a um dos dias do festival antes mesmo da definição completa do line-up.</p>
+                                <p>As vendas gerais começam em 9 de dezembro, às 19h, exclusivamente pela plataforma Ticketmaster Brasil, enquanto membros do Rock in Rio Club terão acesso antecipado na pré-venda.</p>
+                                <h3>Ingresso flexível e sujeito à disponibilidade</h3>
+                                <p>O Rock in Rio Card dá direito à entrada em um único dia do festival, com a data escolhida posteriormente pelo comprador. <span class="destaque">O acesso é válido para o setor Gramado, permitindo circulação livre pela Cidade do Rock e participação em todas as atrações.</span> Por ser limitado, o card fica disponível somente enquanto durarem os estoques, como citado pelo site CNN Brasil.</p>
+                                <p> <span class="destaque">A edição de 2026 ocorrerá nos dias 4, 5, 6, 7, 11, 12 e 13 de setembro, no Parque Olímpico do Rio de Janeiro.</span> A expectativa é de grande procura, especialmente após o sucesso da última edição: em 2024, os 180 mil Rock in Rio Cards se esgotaram em 2h04.</p>
+                                <h3>Valores e formas de pagamento</h3>
+                                <p><span class="destaque">O Rock in Rio Card será vendido por R$ 795 (inteira), R$ 397,50 (meia-entrada) e R$ 675,75 para quem optar pelo ingresso Itaú </span>, válido para compras realizadas com cartões de crédito emitidos pelo Itaú Unibanco.</p>
+                                <p>O pagamento pode ser feito via Pix ou cartão de crédito, com parcelamento em até seis vezes sem juros. Cada comprador poderá adquirir até quatro cards por CPF, sendo permitida apenas uma meia-entrada dentro desse limite.</p>
+                                
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/t5fskRL--ko?si=gOSr2IkuJaGDawkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            
+                            </div>
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+    <!-- ======================= MODAL3 ======================= -->
                 <div id="modal-chicomoedas" class="modal">
                     <div class="modal-content">
                         <span onclick="closeModal('modal-chicomoedas')" class="close">X</span>
                         <div class="cabecalho">
                             <h1>Saiba quem é o Chico Moedas, o ex de Luísa Sonza que pode entrar para a política</h1>
-                            <h2>Respostas das provas de Matemática e Ciências da Natureza serão usadas apenas para fins pedagógicos; resultado final do exame será divulgado em janeiro</h2>
-                            <h3>postado em 19/11/2025 11:42</h3>
+                            <h2>O Ex-namorado de Sonza recebeu um convite de Washington Quaquá, vice-presidente do PT, para entrar no mundo da política</h2>
+                            <h3>postado em 18/11/2025 11:55</h3>
                         </div>
                         <img src="https://www.maisnovela.com.br/wp-content/uploads/2023/12/Luisa-Sonza-e-Chico-Moedas.png" alt="" class="img-noticia">
-                        <p class="descricao-foto">Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo Miguel/MEC)</p>
+                        <p class="descricao-foto">Chico Moedas namorou Luísa Sonza em 2023 (Fotos: Reprodução, Redes sociais)</p>
                         <div class="conteudo">
-                            <p>O Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) divulgou, nesta quarta-feira (19/11), o <span class="destaque">gabarito oficial e os cadernos de questões do segundo dia de provas do Exame Nacional do Ensino Médio (Enem 2025)</span>. Nesta etapa, os participantes responderam às questões de Matemática e Ciências da Natureza, disciplinas que costumam apresentar maior nível de dificuldade e exigem interpretação precisa, domínio de fórmulas e habilidade de resolução rápida.</p>
-                            <p>O documento com as respostas oficiais foi publicado no portal do Inep e pode ser consultado pela página do candidato. O gabarito serve para que os estudantes comparem seus desempenhos, mas não permite o cálculo exato das notas, já que o Enem utiliza a metodologia da Teoria de Resposta ao Item (TRI), que considera parâmetros como dificuldade, coerência das respostas e padrão individual de acertos e erros.</p>
-                            <p>Em 2025, o segundo dia de aplicação ocorreu de forma tranquila, com poucas ocorrências, conforme o Inep. No país, o exame mobilizou mais de 4,8 milhões de candidatos. O Ministério da Educação (MEC) estima uma taxa de participação de cerca de 70% nos dois dias de prova, índice considerado uma média últimos anos.</p>
-                            <p>O resultado final do Enem 2025 será divulgado em janeiro de 2026, e poderá ser usado para ingresso em universidades públicas por meio do Sistema de Seleção Unificada (Sisu), para obtenção de bolsas no Programa Universidade para Todos (Prouni) e para acesso a financiamentos estudantis, como o Fies.</p>
+                            <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora Luísa Sonza, pode entrar na política. <span class="destaque">O ex-namorado de Sonza recebeu um convite de Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio de Janeiro.</span></p>
+                            <p>A ideia do dirigente petista surgiu após o amigo de Casimiro Miguel participar do Três Irmãos Podcasts, do historiador Jones Manoel, em outubro.No programa, eles conversaram sobre os rumos que a </p>
+                            <p>No programa, eles conversaram sobre os rumos que a esquerda brasileira está tomando, além de assuntos como futebol e a megaoperação policial que deixou mais de 100 mortos recentemente.</p>
+                            <p>“Reforço o convite e repito: a política precisa se arejar cada vez mais, precisa representar as pessoas e ouvir todas as vozes. A esquerda tem que aprender a fazer isso e a ampliar esse projeto”, defendeu Washington Quaquá, justificando seu apoio a Chico Moedas.</p>
+                            
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DgQ2sFiEHck?si=yK0CiTSZSnknm8Zq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
                         </div>
                         <hr>
                        <div class="saiba-mais">
@@ -247,69 +351,510 @@
 
                             <div class="grid">
 
-                                <a href="index.html?modal=harrypotter" class="card">
-                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
-                                    <div class="info">
-                                        <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
-                                        <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
-                                    </div>
-                                 </a>
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
 
-                                <a href="index.html?modal=bolsonaro" class="card">
-                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
-                                    <div class="info">
-                                        <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
-                                        <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
-                                    </div>
-                                </a>
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
 
-                                <a href="index.html?modal=strangerthings" class="card">
-                                    <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
-                                    <div class="info">
-                                        <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
-                                        <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
-                                    </div>
-                                </a>
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
 
-                                <a href="index.html?modal=lula" class="card">
-                                <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
-                                <div class="info">
-                                    <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
-                                    <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
                                 </div>
-                                </a>
-
-                                <a href="index.html?modal=copa" class="card">
-                                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
-            
-                                <div class="info">
-                                    <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
-                                    <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
-                                </div>
-                                </a>
-
-                                <a href="index.html?modal=enem" class="card">
-                                    <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
-                                    <div class="info">
-                                        <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
-                                        <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
-                                    </div>
-                                </a>
-
-                            </div>
                         </div>
 
                     </div>
                 </div>
 
+    <!-- ======================= MODAL4======================= -->
+                 <div id="modal-maduro" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-maduro')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>EUA rejeitaram oferta de renúncia de Nicolás Maduro em negociação, diz NYT</h1>
+                                <h2>Autoridades da Venezuela afirmaram que ditador estaria disposto a deixar o poder após um período de transição de dois a três anos, segundo reportagem</h2>
+                                <h3>postado em 19/11/2025 23:12</h3>
+                            </div>
+                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/2025-01-12T181627Z_1_LYNXMPEL0B08P_RTROPTP_4_VENEZUELA-CONDENA-SANCOES-e1737580654733.jpg?w=1200&h=630&crop=1" alt="" class="img-noticia">
+                            <p class="descricao-foto">Caderno de provas do segundo dia do Enem 2025 - (crédito: Angelo Miguel/MEC)</p>
+                            <div class="conteudo">
+                                <p>Segundo fontes do jornal, o presidente <span class="destaque">Donald Trump havia autorizado negociações "paralelas" com o regime venezuelano. </span>Em certo ponto, Maduro ofereceu renunciar após alguns anos, medida que foi rejeitada pela Casa Branca.</p>
+                                <p>Autoridades venezuelanas disseram aos americanos que Maduro estaria disposto a renunciar após um período de transição de dois a três anos. Porém, qualquer "prazo" para o ditador deixar o poder é inaceitável para os EUA, destacou a reportagem.</p>
+                                <p>Isso acontece em meio a um impasse cada vez maior entre os dois países e enquanto os Estados Unidos aumentam a pressão contra o regime venezuelano e realiza <span class="destaque">ataques no Caribe e no Pacífico contra barcos que dizem transportar drogas. Nicolás Maduro tem pedido publicamente que não haja uma guerra, apelando por diálogo com a Casa Branca.</span></p>
+                                <h3>Trump aprova planos da CIA para Venezuela</h3>
+                                <p>O New York Times também afirmou que <span class="destaque">Trump aprovou planos da CIA, a agência de inteligência dos EUA, para ações secretas dentro da Venezuela.</span>"Trump realizou duas reuniões na Sala de Situação da Casa Branca na semana passada para discutir a Venezuela e revisar opções com seus principais assessores", pontua a reportagem.</p>
+                                <p>Entretanto, não está claro quais seriam essas operações ou quando podem ser realizadas. Outro ponto reforçado pelo jornal é que o presidente americano ainda não autorizou o envio de soldados para o país sul-americano. De toda forma, Trump disse na segunda-feira (17) que não descarta enviar tropas para a Venezuela, mantendo a pressão contra o regime de Maduro.</p>
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ypRLMbxgoVY?si=lZG39QS0QcXjyv7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+    <!-- ======================= MODAL5======================= -->
+                 <div id="modal-bicheiro" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-bicheiro')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>Bicheiro que inspirou personagem da Netflix irá a júri popular por homicídio; veja o caso</h1>
+                                <h2>Bernardo Bello, apontado como inspiração para o Profeta de Os Donos do Jogo, será julgado pela morte do contraventor Alcebíades Paes Garcia, o Bid.</h2>
+                                <h3>postado em 18/11/2025 18:18</h3>
+                            </div>
+                            <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/jogo-do-bicho_widelg.png" alt="" class="img-noticia">
+                            <p class="descricao-foto">Foto: Divulgação</p>
+                            <div class="conteudo">
+                                <p>Bernardo Bello, um dos nomes mais influentes e temidos do mundo do jogo do bicho no Rio de Janeiro, foi encaminhado a <span class="destaque">júri popular pela morte do contraventor Alcebíades Paes Garcia, conhecido como Bid.</span></p>
+                                <p>A decisão da Justiça fluminense, divulgada nesta semana,<span class="destaque"> mantém a acusação de homicídio qualificado contra Bello, cuja trajetória também inspirou parte da construção do personagem Profeta</span>, interpretado por André Lamoglia na série Os Donos do Jogo, da Netflix.</p>
+                                <h3>Ascensão no submundo do bicho</h3>
+                                <p>Bello entrou para a contravenção ao se casar com Tamara Harrouche Garcia, filha do histórico bicheiro Waldermir Paes Garcia, o Maninho. A partir daí, consolidou-se como um dos principais nomes do setor, acumulando poder e protagonizando disputas sangrentas pelo controle de bancas no Rio, como citado pelo site Metrópoles.</p>
+                                
+                                <img src="https://www.bnewssaopaulo.com.br/media/uploads/2025/10/donos-do-jogo.png" alt="" class="img-noticia">
+                                <p>Ao longo dos anos, passou a ser <span class="destaque">alvo frequente de operações da Polícia Civil e do Ministério Público, que o investigam por extorsão, ameaças, lavagem de dinheiro e participação em organização criminosa.</span></p>
+                                <p>A influência de Bello no universo da contravenção acabou servindo de inspiração para elementos da série da Netflix, que retrata as intrincadas redes de poder e violência por trás do jogo do bicho carioca.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wWgP4sfcwkg?si=WB5C-e304LDQ0qUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
 
+    <!-- ======================= MODAL6======================= -->
+                <div id="modal-tremembe1" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-tremembe1')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>A atitude inusitada de Suzane na faculdade que ficou de fora de “Tremembé”</h1>
+                                <h2>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma nova onda de interesse em cima do cotidiano dentro da “prisão dos famosos”</h2>
+                                <h3>postado em 19/11/2025 10h34</h3>
+                            </div>
+                            <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/suzane-von-richthofen-faculdade-1_widelg.jpg" alt="" class="img-noticia">
+                            <p class="descricao-foto">Um hábito inesperado de Suzane von Richthofen durante sua rotina universitária veio à tona; costume surpreendia todos os colegas  |   BNews SP - Divulgação Foto: Reprodução</p>
+                            <div class="conteudo">
+                                <p>A repercussão da série “Tremembé”, sucesso do Prime Video, trouxe uma <span class="destaque">nova onda de interesse em cima do cotidiano dentro da “prisão dos famosos”. Uma das histórias presentes na produção é a de Suzane von Richthofen, condenada a 39 anos pela morte dos pais, Manfred e Marísia, e uma das criminosas mais conhecidas do Brasil.</span></p>
+                                <h3>Da cela à sala de aula</h3>
+                                <p>Durante o período em que ficou presa no interior paulista, <span class="destaque">Suzane começou a cursar o ensino superior. Ela chegou a ser aprovada em Farmácia; entretanto, por falta de alunos, foi remanejada para a turma de Biomedicina.</span></p>
+                                <p>Mesmo buscando fugir dos holofotes, Suzane foi fotografada algumas vezes por colegas, apesar de o diretor da instituição ter pedido para que isso não acontecesse, conforme apurou o portal Terra.Mas o que mais chamava atenção, de acordo com relatos compilados por Ullisses Campbell em um de seus livros, era um hábito peculiar que se repetia sempre que ela pisava na faculdade.</p>
+                                <h3>“Ritual” que chocava os colegas</h3>
+                                <p>Assim que entrava no campus, <span class="destaque">Suzane tinha o costume de ir direto para a lanchonete. Lá, fazia sempre o mesmo pedido: dois hambúrgueres e uma Coca-Cola. </spanO> lanche em si não surpreendia, mas a forma como ela o consumia deixava todos espantados. O autor descreve que ela devorava ambos os hambúrgueres em menos de um minuto, “deixando todos boquiabertos com a pressa, o apetite e a voracidade”.</p>
+                                <h3>Exigências negadas</h3>
+                                <p>Ainda segundo Ullisses Campbell, Suzane fez pedidos incomuns à direção da penitenciária durante esse período, mas nenhum deles foi atendido.Esses episódios, somados aos momentos vividos enquanto frequentava a faculdade, fazem parte das histórias que inspiraram a produção de “Tremembé”.</p>
 
 
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/O9uCb4yI7Y8?si=R2Nxznx_Jj4cSRpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        
+            <!-- ======================= MODAL7======================= -->
+
+                <div id="modal-tremembe2" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-tremembe2')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>Sandrão processa Prime Video após repercussão da série Tremembé; veja quanto ela pediu</h1>
+                                <h2>Condenada afirma que produção distorce fatos do crime pelo qual foi condenada em 2005 e usa sua imagem de forma indevida</h2>
+                                <h3>postado em 19/11/2025 14h20</h3>
+                            </div>
+                            <img src="https://www.bnewssaopaulo.com.br/media/_versions/2025/11/sandrao_fzcbr4il_widelg.jpg" alt="" class="img-noticia">
+                            <p class="descricao-foto">|   BNews SP - Divulgação Foto: Reprodução</p>
+                            <div class="conteudo">
+                                <p>Sandra Regina Ruiz Gomes, conhecida nacionalmente como Sandrão, <span class="destaque">abriu um processo judicial contra a Amazon, responsável pelo serviço de streaming Prime Video, após a repercussão da série Tremembé.</span> A ação, protocolada na segunda-feira (17), pede indenização de R$ 3 milhões por danos morais, uso irregular de imagem e supostos excessos cometidos pela obra audiovisual. A informação foi revelada pelo colunista Gabriel Vaquer.</p>
+                                <h3>Da cela à sala de aula</h3>
+                                <p>Segundo a defesa de Sandrão, a produção teria adotado uma abordagem dramática e “distorcida” para <span class="destaque"> retratar episódios ligados ao sequestro de um adolescente de 14 anos ocorrido em 2005, crime pelo qual ela foi condenada. A petição afirma que o Prime Video teria incluído elementos ficcionais que não constam nos autos oficiais</span>, influenciando negativamente a percepção do público sobre o caso.</p>
+
+                                <h3>Acusações contra a série</h3>
+                                <p>Segundo o Metrópoles, a equipe jurídica de Sandrão destaca que <span class="destaque">a série teria reforçado versões controversas sobre o crime e apresentado situações que não correspondem à realidade. “Ela foi condenada pelas ligações feitas durante o sequestro, e nada além disso. A série cria um fato novo, que teria agravado a pena”</span>, disse o advogado de Sandra durante entrevista a Roberto Cabrini.</p>
+                                <p>Sandrão, também criticou o modo como sua convivência com outras detentas famosas, entre elas Suzane von Richthofen e Elize Matsunaga, foi explorada como elemento de apelo dramático.</p>
+                                
+                                <h3>Histórico criminal e situação atual de Sandrão</h3>
+                                <p>Condenada inicialmente a 27 anos de reclusão, pena posteriormente reduzida para 24 anos, Sandrão cumpriu uma década no Presídio de Tremembé, conhecida por abrigar detentos de grande repercussão nacional. Ela obteve progressão ao regime aberto em 2015, após atender aos requisitos legais.</p>
+                                <p>Embora o processo tenha sido divulgado publicamente, até o momento a Amazon não se pronunciou sobre a ação ou sobre as críticas feitas por Sandrão à série Tremembé.A disputa judicial agora deve seguir para análise, podendo abrir mais um capítulo envolvendo a repercussão de produções true crime no streaming brasileiro.</p>
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/vrkcaKAvSug?si=iH188fPjzn2bAbmN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        <!-- ======================= MODAL8======================= -->
+                <div id="modal-andressa" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-andressa')" class="close">X</span>
+                            <div class="cabecalho">
+                                <h1>Andressa Urach vira piada nas redes após “samba culposo” em escola de samba; veja vídeo</h1>
+                                <h2>Musa da Porto da Pedra foi massacrada nas redes após sua performance na apresentação  </h2>
+                                <h3>postado em 17/11/2025 12h37</h3>
+                            </div>
+                            <img src="https://www.bnews.com.br/media/_versions/2025/11/andressa-urach_6c6pbbt2_widelg.jpg" alt="" class="img-noticia">
+                            <p class="descricao-foto">|   BBnews - Divulgação Reprodução/Anderson Bordê/AgNewsNews SP - Divulgação Foto: Reprodução</p>
+                            <div class="conteudo">
+                                <p>Andressa Urach marcou sua estreia no Carnaval do Rio de Janeiro, no último sábado (15), <span class="destaque">ao ser apresentada como musa da escola de samba Porto da Pedra, em São Gonçalo, para desfilar na Série Ouro em 2026. No entanto, o que chamou a atenção mesmo foi o samba da ex-Fazenda.</span></p>
+                                <p> Nas redes sociais, internautas não pouparam críticas e memes à performance de Andressa na apresentação. <span class="destaque">“Ela toda dura, não rebola no samba...”, comentou uma internauta. “Igual um fusca sem suspensão”, ironizou outro. “Samba culposo, quando não há intenção de sambar”, brincou mais um.</span></p>
+
+                            </div>
+                            <hr>
+                        <div class="saiba-mais">
+                                <h2>SAIBA MAIS</h2>
+
+                                <div class="grid">
+
+                                    <a href="index.html?modal=modal-harrypotter" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/novo-harry-potter-serie.png?w=1200&h=900&crop=0" alt="">
+                                        <div class="info">
+                                            <span class="tag">Daniel Radcliffe mandou carta para novo intérprete de "Harry Potter"</span>
+                                            <p>O ator Daniel Radcliffe, 36, conhecido por seu papel em "Harry Potter", contou que, com a nova produção baseada nos livros de J. K. Rowling, enviou uma carta ao novo protagonista, Dominic McLaughlin, 11, lhe desejando um ótimo período com o personagem.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-bolsonaro" class="card">
+                                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/AGE20250911070-e1763568757637.jpg?w=1200&h=900&crop=0" alt="EduTech em Alta">
+                                        <div class="info">
+                                            <span class="tag">Batalhão da PM entra no radar para prisão de Bolsonaro</span>
+                                            <p>Batalhão da PMDF passou a ser considerado como opção para a prisão do ex-presidente Jair Bolsonaro (PL), condenado a 27 anos e três meses de reclusão no julgamento do plano de golpe. O local fica na região administrativa do Guará, a cerca de 15 quilômetros do centro de Brasília.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-strangerthings" class="card">
+                                        <img src="https://cdn.ome.lt/6oxZwfA-MY4SaKphf_PyD2xzc-I=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/stranger-things-netflix-teaser-ultima-temporada.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Stranger Things | Criadores confirmam duração do último episódio</span>
+                                            <p>Os irmãos Ross e Matt Duffer, criadores da série "Stranger Things", confirmaram a duração do último episódio da produção. Cerca de uma semana antes da primeira parte da última temporada ser lançada, eles falaram sobre o assunto em entrevista ao Collider.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-lula" class="card">
+                                    <img src="https://conteudo.imguol.com.br/c/noticias/b6/2025/11/18/071125---o-presidente-lula-pt-durante-discurso-na-plenaria-de-abertura-da-cop30-em-belem-1763484201117_v2_900x506.jpg.webp" alt="">
+                                    <div class="info">
+                                        <span class="tag">Lula vota a Belém para pressionar por resultado concreto da COP30</span>
+                                        <p>O presidente Lula (PT) volta hoje a Belém para pressionar por um resultado concreto para a COP30, cúpula internacional do clima. O presidente vai se reunir com o secretário-geral da ONU, António Guterres, em um encontro que visa "fortalecer a governança climática e o multilateralismo"</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-copa" class="card">
+                                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/Selecao-Brasileira-e1763230411572.jpg?w=1200&h=900&crop=0" alt="">
+                
+                                    <div class="info">
+                                        <span class="tag">Brasil na lista? Veja as seleções cabeça de chave na Copa do Mundo</span>
+                                        <p>A Seleção Brasileira será cabeça de chave na Copa do Mundo de 2026. Isso ficou definido após anúncio da Fifa nesta quinta-feira (19) e atualização dom ranking das seleções.</p>
+                                    </div>
+                                    </a>
+
+                                    <a href="index.html?modal=modal-enem" class="card">
+                                        <img src="https://wordpress-cms-revista-prod-assets.quero.space/uploads/2025/11/Enem-2025-tera-3-questoes-anuladas-veja-quais-sao-1-1024x683.jpg" alt="">
+                                        <div class="info">
+                                            <span class="tag">Enem 2025 terá 3 questões anuladas; veja quais são</span>
+                                            <p>O Exame Nacional do Ensino Médio (Enem) 2025 está sendo marcado por uma polêmica envolvendo o vazamento de questões antes da aplicação da prova.Devido à situação, na tarde desta terça (18), o Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep) anunciou a anulação de três questões aplicadas durante a primeira fase do exame.</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-title">Prisma Notícia</h2>
+                <p class="footer-text">
+                    Seu portal que enxerga tudo de vários ângulos — rápido, direto e sem
+                    enrolação.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-subtitle">Redes sociais</h3>
+                <p class="footer-text">Fica de olho nas novidades:</p>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
             </div>
         </div>
-    </section>
 
+        <div class="footer-bottom">
+            © 2025 Prisma Notícia — Todos os direitos reservados.
+        </div>
+    </footer>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
