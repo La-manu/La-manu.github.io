@@ -75,3 +75,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+// codigo para filtrar o glossário
+function filtrarGlossario() {
+const input = document.getElementById('glossarioInput');
+const filter = input.value.toLowerCase();
+const list = document.getElementById('glossarioList');
+const items = list.getElementsByTagName('li');
+
+
+for (let i = 0; i < items.length; i++) {
+const title = items[i].getElementsByTagName('h3')[0];
+const text = title.textContent || title.innerText;
+if (text.toLowerCase().indexOf(filter) > -1) {
+items[i].style.display = '';
+} else {
+items[i].style.display = 'none';
+}
+}
+}

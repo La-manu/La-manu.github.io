@@ -590,9 +590,8 @@ h1{
     }
 
     /* 3. Galeria de Vinil: Apenas ajustes estéticos finais */
-    #vinyl-gallery {
-        padding: 0 5px;
-    }
+    
+
 }
 
 /* --- BREAKPOINT 4: Desktops Grandes (min-width: 901px) --- */
@@ -604,6 +603,8 @@ h1{
         max-width: 1200px; /* Limita o container pai */
         margin: 50px auto;
     }
+
+
 }
 
 

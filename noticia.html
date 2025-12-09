@@ -24,7 +24,7 @@
             <div class="logo">
                 <button id="btnMenu" aria-label="Abrir menu" style="background:none;border:none;padding:0">
                     <!-- Use sua imagem em img/menu.png se quiser; aqui tem fallback com texto -->
-                    <img class="menu" src="img/menu.png" alt="menu" onerror="this.style.display='none';this.insertAdjacentText('afterend','☰ Menu')">
+                    <img src="img/menu.png" alt="menu" class="menu" onerror="this.style.display='none';this.insertAdjacentText('afterend','☰ Menu')">
                 </button>
 
                     <!-- NAV: a sidebar (já inserida no local correto) -->
@@ -48,7 +48,7 @@
                     <label class="search" aria-label="Campo de busca">
 
                         <!-- Campo de texto onde o usuário digita -->
-                        <input type="search" placeholder="Busque" class="search-input" />
+                        <input type="search" placeholder="Busque" class="search-input"  />
 
                         <!-- Botão com ícone de lupa -->
                         <button class="search-btn" aria-label="Pesquisar">
@@ -72,6 +72,10 @@
     <!-- IMAGEM DO TÍTULO DA PÁGINA -->
     <img src="img/Escrita.png" alt="" class="entretenimento">
 
+    
+        <img src="/img/glossario.png" alt="" class="glossariooo" onclick="openModal('modal-glossario')">
+   
+    
     <!-- ======================= SEÇÃO DAS NOTÍCIAS ======================= -->
     <section>
 
@@ -337,7 +341,7 @@
                         <p class="descricao-foto">Chico Moedas namorou Luísa Sonza em 2023 (Fotos: Reprodução, Redes sociais)</p>
                         <div class="conteudo">
                             <p>O influenciado digital Chico Moedas, que ficou famoso na época em que namorou a cantora Luísa Sonza, pode entrar na política. <span class="destaque">O ex-namorado de Sonza recebeu um convite de Washington Quaquá, vice-presidente do PT e prefeito de Maricá, cidade do estado do Rio de Janeiro.</span></p>
-                            <p>A ideia do dirigente petista surgiu após o amigo de Casimiro Miguel participar do Três Irmãos Podcasts, do historiador Jones Manoel, em outubro.No programa, eles conversaram sobre os rumos que a </p>
+                            <p>A ideia do dirigente petista surgiu após o amigo de Casimiro Miguel participar do Três Irmãos Podcasts, do historiador Jones Manoel, em outubro. </p>
                             <p>No programa, eles conversaram sobre os rumos que a esquerda brasileira está tomando, além de assuntos como futebol e a megaoperação policial que deixou mais de 100 mortos recentemente.</p>
                             <p>“Reforço o convite e repito: a política precisa se arejar cada vez mais, precisa representar as pessoas e ouvir todas as vozes. A esquerda tem que aprender a fazer isso e a ampliar esse projeto”, defendeu Washington Quaquá, justificando seu apoio a Chico Moedas.</p>
                             
@@ -828,7 +832,140 @@
                 </div>
 
 
-        <footer class="footer">
+
+                <div id="modal-glossario" class="modal">
+                    <div class="modal-content">
+                            <span onclick="closeModal('modal-glossario')" class="close">X</span>
+                            <div class="glossario-container">
+                    <!-- SVG sprite: ícones do glossário -->
+                            <svg style="display:none;">
+                                <symbol id="icon-book" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14a1 1 0 0 1-1.447.894L13 18l-6.553 1.894A1 1 0 0 1 5 19V5z"/></symbol>
+                                <symbol id="icon-music" viewBox="0 0 24 24"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></symbol>
+                                <symbol id="icon-tv" viewBox="0 0 24 24"><path d="M3 5h18v12H3zM1 19h22v2H1z"/></symbol>
+                                <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 3v18h18v-2H5V3H3z"/></symbol>
+                                <symbol id="icon-list" viewBox="0 0 24 24"><path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z"/></symbol>
+                                <symbol id="icon-ticket" viewBox="0 0 24 24"><path d="M2 7v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/></symbol>
+                                <symbol id="icon-cursor" viewBox="0 0 24 24"><path d="M3 3l18 9-9 4-4 9-5-22z"/></symbol>
+                                <symbol id="icon-window" viewBox="0 0 24 24"><path d="M3 3h18v18H3zM8 8h8v8H8z"/></symbol>
+                                <symbol id="icon-gavel" viewBox="0 0 24 24"><path d="M1 21l6-6 3 3-6 6H1v-3zM21 7l-4-4-6 6 4 4 6-6z"/></symbol>
+                                <symbol id="icon-scale" viewBox="0 0 24 24"><path d="M12 2L6 6v2h12V6l-6-4zM5 10h14v2H5v-2zM8 14a4 4 0 1 0 8 0H8z"/></symbol>
+                                <symbol id="icon-spark" viewBox="0 0 24 24"><path d="M12 2l2.2 5.6L20 10l-5.6 2.2L12 18l-2.4-5.8L4 10l5.8-2.4L12 2z"/></symbol>
+                                <symbol id="icon-comment" viewBox="0 0 24 24"><path d="M21 6h-18v11h4v3l4-3h10z"/></symbol>
+                                <symbol id="icon-paper" viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM14 3v6h6"/></symbol>
+                                <symbol id="icon-warning" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></symbol>
+                            </svg>
+                            <h2>Glossário</h2>
+
+
+                            <div class="glossario-search">
+                            <input type="text" id="glossarioInput" placeholder="Busque um termo..." onkeyup="filtrarGlossario()">
+                            </div>
+
+
+                            <ul class="glossario-list" id="glossarioList">
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-book"></use></svg>
+                            <h3>Enem</h3>
+                            <p>Exame Nacional do Ensino Médio, usado para ingresso em universidades e programas estudantis.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-music"></use></svg>
+                            <h3>Rock in Rio Card</h3>
+                            <p>Ingresso antecipado que garante a entrada em um dos dias do festival antes da definição do line-up.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-tv"></use></svg>
+                            <h3>Tremembé</h3>
+                            <p>Série do Prime Video que retrata histórias de presídios brasileiros com grande repercussão nacional.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-chart"></use></svg>
+                            <h3>TRI (Teoria de Resposta ao Item)</h3>
+                            <p>Método estatístico que calcula a nota do Enem considerando dificuldade e coerência das respostas.</p>
+                            </li>
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-list"></use></svg>
+                            <h3>Line-up</h3>
+                            <p>Lista oficial de artistas que irão se apresentar em um festival ou evento musical.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-ticket"></use></svg>
+                            <h3>Pré-venda</h3>
+                            <p>Período exclusivo em que alguns usuários podem comprar ingressos antes do público geral.</p>
+                            </li>
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-cursor"></use></svg>
+                            <h3>Clique</h3>
+                            <p>Interação do usuário ao pressionar um elemento digital, como links, botões ou imagens.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-window"></use></svg>
+                            <h3>Modal</h3>
+                            <p>Janela sobreposta ao site que exibe conteúdo adicional sem trocar de página.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-gavel"></use></svg>
+                            <h3>True Crime</h3>
+                            <p>Gênero de produção audiovisual que retrata crimes reais, investigações e casos de repercussão.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss" viewBox="0 0 24 24"><use href="#icon-scale"></use></svg>
+                            <h3>CPI</h3>
+                            <p>Comissão Parlamentar de Inquérito, usada para investigar fatos de interesse público.</p>
+                            </li>
+
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss"><use href="#icon-spark"/></svg>
+                            <h3>Trending</h3>
+                            <p>Assunto que está bombando no momento nas redes ou na mídia.</p>
+                            </li>
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss"><use href="#icon-tv"/></svg>
+                            <h3>Streaming</h3>
+                            <p>Plataformas que disponibilizam filmes, séries e música sob demanda.</p>
+                            </li>
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss"><use href="#icon-comment"/></svg>
+                            <h3>Engajamento</h3>
+                            <p>Interações que um conteúdo recebe, como likes, comentários e compartilhamentos.</p>
+                            </li>
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss"><use href="#icon-paper"/></svg>
+                            <h3>Headline</h3>
+                            <p>O título principal de uma notícia, feito para chamar atenção.</p>
+                            </li>
+
+                            <li class="glossario-item">
+                            <svg class="icon-gloss"><use href="#icon-warning"/></svg>
+                            <h3>Breaking News</h3>
+                            <p>Notícia urgente divulgada em tempo real.</p>
+                            </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h2 class="footer-title">Prisma Notícia</h2>
@@ -847,8 +984,8 @@
                     <a href="#">YouTube</a>
                 </div>
             </div>
-        </div>
 
+        </div>
         <div class="footer-bottom">
             © 2025 Prisma Notícia — Todos os direitos reservados.
         </div>

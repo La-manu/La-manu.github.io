@@ -10,6 +10,7 @@
 }
 
 body{
+  max-width: 100% !important;
     background-color: #C2CEE4;
   overflow-x: hidden;
 }
@@ -22,13 +23,13 @@ body{
     align-items: center;
 }
 
-.opcoes{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 3rem;
-    background-color: #50708A;
-    padding: 10px;
+.opcoes {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
+  background-color: #50708a;
+  padding: 10px;
 }
 
 .pesquisa {
@@ -48,13 +49,13 @@ body{
     height: 100px;
     align-items: center;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     background-color: #ffffff;
 
 }
 
 .menu {
-    width: 35px;
+    width: 35%;
     height: 35px;
     align-items: center;
     display: flex;
@@ -68,14 +69,13 @@ body{
     height: auto;
 
 }
-
-a{
-    text-decoration: none;
-    color: rgb(255, 244, 229);
-    font-weight: 500;
-    position: relative;
-    padding: 10px;
-    font-size: 25px;
+a {
+  text-decoration: none;
+  color: rgb(255, 244, 229);
+  font-weight: 500;
+  position: relative;
+  padding: 10px;
+  font-size: 25px;
 }
 
 a::after{
@@ -174,6 +174,7 @@ a:hover::after {
   box-shadow: 6px 0 30px rgba(0,0,0,0.45);
   overflow-y: auto;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 100%;
     
 }
 
@@ -233,7 +234,7 @@ a:hover::after {
 /* responsivo */
 @media (max-width:540px) {
   #sidebar { width: 84%; padding: 22px; }
-  #sidebar > a { font-size: 25px; }
+ 
 }
 
 
@@ -244,7 +245,7 @@ a:hover::after {
     margin: auto auto;
     display: flex;
     margin-top: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .entretenimento img:hover {
@@ -252,6 +253,20 @@ a:hover::after {
     transition: transform 0.3s ease;
 }
 
+.glossariooo{
+    width: 20%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.glossariooo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 
 
 .card2 {
@@ -357,12 +372,15 @@ a:hover::after {
   background: rgba(0,0,0,0.5);
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100400;
 
 
 }
 .modal-content {
   background: #edf0f7;
-  padding: 20px;
+  padding: 2%;
   border-radius: 12px;
     width: 90%;
   margin: 0px 60px;
@@ -370,6 +388,9 @@ a:hover::after {
   overflow-y: auto; /* isso aqui libera o scroll */
 }
 
+.modal-content .conteudo {
+  width: 90%;
+}
 .close {
 
   top: 15px;
@@ -381,7 +402,7 @@ a:hover::after {
 }
 
 .modal-content h1 {
-  font-size: 35px;
+  font-size: 180%;
   margin-bottom: 15px;
   color: #112a3e;
   width: 100%;
@@ -411,7 +432,7 @@ a:hover::after {
 }
 
 .img-noticia {
-  width: 45%;
+  width: 70%;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   aspect-ratio: 3/2;
@@ -430,13 +451,13 @@ a:hover::after {
 }
 
 .conteudo {
-  font-size: 130%;
+  font-size: 110%;
   line-height: 1.6;
   color: #333333;
   margin-top: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 60px;
-  padding: 60px;
+  margin: 0 2%;
+  padding: 5%;
 }
 
 .conteudo p {
@@ -516,6 +537,7 @@ iframe {
   display: block;
   margin: 30px auto;
   margin: auto auto;
+  width: 90%;
 }
 
 
@@ -575,6 +597,7 @@ iframe {
 .footer-social a {
   color: #fff;
   text-decoration: none;
+  font-size: 90%;
 }
 
 .footer-bottom {
@@ -584,8 +607,249 @@ iframe {
   font-size: 0.9rem;
 }
 
+.glossario-container {
+max-width: 1100px;
+margin: 60px auto;
+padding: 30px;
+background: #ffffff;
+border-radius: 16px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+border: 1px solid #e5e5e5;
+}
 
-   =========================================== */
+
+.glossario-container h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+font-weight: 700;
+color: #333;
+text-align: center;
+}
+
+
+.glossario-search {
+display: flex;
+justify-content: center;
+margin-bottom: 25px;
+}
+
+
+.glossario-search input {
+width: 70%;
+padding: 12px 15px;
+font-size: 1rem;
+border-radius: 10px;
+border: 1px solid #ccc;
+transition: .2s ease;
+}
+
+
+.glossario-search input:focus {
+outline: none;
+border-color: #6b4bff;
+box-shadow: 0 0 6px rgba(107,75,255,0.3);
+}
+
+
+.glossario-list {
+margin-top: 20px;
+}
+
+
+.glossario-item {
+padding: 18px 20px;
+border-bottom: 1px solid #efefef;
+transition: background .2s ease;
+}
+
+
+.glossario-item:hover {
+background: #fafafa;
+}
+
+
+.glossario-item h3 {
+font-size: 1.2rem;
+margin-bottom: 5px;
+font-weight: 600;
+color: #444;
+}
+
+
+.glossario-item p {
+font-size: 0.95rem;
+color: #666;
+line-height: 1.4;
+}
+.glossario-item {
+position: relative;
+display: flex;
+gap: 12px;
+align-items: flex-start;
+opacity: 0;
+transform: translateY(12px);
+animation: fadeIn .5s forwards;
+}
+
+.glossario-item:nth-child(1) { animation-delay: .1s; }
+.glossario-item:nth-child(2) { animation-delay: .2s; }
+.glossario-item:nth-child(3) { animation-delay: .3s; }
+.glossario-item:nth-child(4) { animation-delay: .4s; }
+
+
+.icon-gloss {
+width: 22px;
+height: 22px;
+flex-shrink: 0;
+}
+
+
+@keyframes fadeIn {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@media (max-width: 375px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #btnMenu {
+    width: 430px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+  }
+  .logo {
+    gap: 0px;
+  }
+  .logo img {
+    width: 130px;
+  }
+
+  .menu {
+    width: 1%;
+    margin-left: 0;
+  }
+
+  .opcoes {
+    gap: 0.1rem;
+    padding: 8px;
+  }
+
+  .header {
+    font-size: 20% !important;
+    padding: 6px;
+  }
+
+    /* 🔽 Ajuste do menu Opções */
+  .opcoes {
+    gap: 0.5rem;        /* diminui espaço entre os links */
+    padding: 6px;       /* padding menor */
+  }
+
+  .opcoes a {
+    font-size: 12px;    /* fonte menor */
+    padding: 4px 6px;   /* deixa mais estreito para caber */
+  }
+
+  .opcoes a::after {
+    height: 1px;        /* underline mais fino */
+  }
+
+  /* 🔍 Barra de pesquisa */
+  .search-wrapper {
+    width: 90%;
+  }
+
+  .search {
+    height: 16px;
+  }
+
+  .search-btn {
+    width: 45px;
+    height: 32px;
+  }
+
+  /* 🟦 Sidebar */
+  #sidebar {
+    width: 90%;
+  }
+
+  /* 🎴 Cards */
+  .card2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .card2 h3 {
+    font-size: 1.1rem;
+  }
+
+  .card2 h2 {
+    font-size: 13px;
+  }
+
+  /* 📸 imagens grandes */
+  .img-noticia {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .conteudo {
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 110%;
+  }
+
+  /* 📚 Glossário */
+  .glossario-container {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  .glossario-search input {
+    width: 95%;
+  }
+
+  .glossario-item {
+    padding: 15px 10px;
+  }
+
+  /* GRID vira uma coluna */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: 120px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+   /*=========================================== */
 @media (max-width: 480px) {
 
   .header {
@@ -599,6 +863,12 @@ iframe {
     width: 140px;
   }
 
+  .menu {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-left: 0;
+  }
   .opcoes {
     justify-content: center;
     gap: 1rem;
@@ -619,6 +889,7 @@ iframe {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
+    width: 100%;
   }
 
   .logo img {
